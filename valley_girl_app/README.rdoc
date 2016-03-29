@@ -1,0 +1,9 @@
+# Valley Girl App
+
+##About
+
+
+##Technologies Used
+-Ruby on Rails
+-Postsql
+
