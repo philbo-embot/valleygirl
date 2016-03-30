@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MOVIES</title>
+</head>
+	<header>
+		<h1>AWESOME MOVIES</h1>
+	</header>
+
+<body>
+<% @movies.each do |movie| %>
+	<h2><a class="links" href= "/movies/<%= movie.id%>"> <%= movie.title %> </a></body></h2>
+<% end %>
+</body>
+
+</html>

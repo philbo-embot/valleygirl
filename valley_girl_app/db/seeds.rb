@@ -1,8 +1,3 @@
-Movie.delete_all
-Song.delete_all
-Store.delete_all
-
-
 movies = Movie.create([
     {   
         title: "Valley Girl",

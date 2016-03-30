@@ -17,3 +17,6 @@ body {
   height: 100%;
 }
 
+.links:hover {
+  transform: scale(1.1);
+}

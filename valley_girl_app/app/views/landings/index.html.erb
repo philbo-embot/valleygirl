@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>TOTALLY VALLEY</title>
 </head>
 <body>
 
-<img src="images/totally_valley_logo.png"/>
-<!-- Just plopped these in as placeholders for now -->
-	<img id="movies" src="images/movies.png">
-	<img id="translator" src="images/translator.png">
-	<img id="songs" src="images/songs.png">
-	<img id="stores" src="images/stores.png">
-	
-<!-- Just plopped in the sounds files. need to talk to Dan about how to make this work -->
-	<div onclick="this.firstChild.play()"><audio src="assets/sounds/as_if.mp3">as if</div>
-  	</button> 
-  	<button onclick="this.firstChild.play()"><audio src="assets/sounds/like_wow.mp3">wow</audio>
-  	</button> 
-  	<button onclick="this.firstChild.play()"><audio src="assets/sounds/popular.mp3">popular</audio>
-  	</button> 
-  	<button onclick="this.firstChild.play()"><audio src="assets/sounds/fer_sure.mp3">fer sure</audio>
-  	</button> 
+<header>
+	<img src="images/totally_valley_logo.png"/>
+</header>
 
+<section class="links">
+	<a class="links" href= "/movies"><img id="movies" src="images/movies.png"></a><br>
+	<a class="links" href= "/translator"><img id="translator" src="images/translator.png"></a>
+	<a class="links" href= "/songs"><img id="songs" src="images/songs.png">
+	<a class="links" href= "/stores"><img id="stores" src="images/stores.png"></a>
+</section>
+
+<section id="sounds">
+	<button onclick="this.firstChild.play()"><audio src="sounds/as_if.mp3"></audio>as if</button>
+  	</button> 
+  	<button onclick="this.firstChild.play()"><audio src="sounds/like_wow.mp3"></audio>wow</audio>
+  	</button> 
+  	<button onclick="this.firstChild.play()"><audio src="sounds/popular.mp3"></audio>popular</audio>
+  	</button> 
+  	<button onclick="this.firstChild.play()"><audio src="sounds/fer_sure.mp3"></audio>fer sure</audio>
+  	</button> 
+<section>
 
 </body>
+
 </html>
