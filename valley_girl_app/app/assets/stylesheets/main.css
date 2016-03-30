@@ -1,0 +1,19 @@
+* {
+	margin: 0;
+	padding: 0;
+	/*background: red;*/
+}
+
+body {
+	background-image: url("valley_girl_background.png");
+/*	background-image: asset-data-url("../images/valley_girl_background.png"); 
+*/	/*background: asset-url("/images/valley_girl_background.png", image);*/
+  /*background: url("/images/valley_girl_background.png") no-repeat center center fixed;*/
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: none;
+  height: 100%;
+}
+

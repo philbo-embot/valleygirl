@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
-  resources   :stores
-  resources   :songs
-  resources   :movies
+	 
+  	resources   :stores
+  	resources   :songs
+  	resources   :movies
+  	root 'landings#index' 
 
 end
 
