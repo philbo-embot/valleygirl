@@ -76,38 +76,48 @@ songs = Song.create([
     {   
         title: "Kids In America",
         artist: "The Muffs",
-        mp3: "mp3",
-        img_url: 'image here'
+        mp3: "KidsInAmerica_TheMuffs.mp3",
+        img_url: 'http://2.bp.blogspot.com/-B1WmWIOxI50/VDxOOtzT7_I/AAAAAAAAAow/OD1lmT4G0Oo/s1600/2011-10-04_the-muffs-guilty.jpg'
     },{
         title: "Fake Plastic Trees",
         artist: "Radiohead",
-        mp3: "mp3",
-        img_url: 'image here'
+        mp3: "FakePlasticTrees_Radiohead.mp3",
+        img_url: 'http://www.musiclipse.com/wp-content/uploads/2014/09/Radiohead-Fake-Plastic-Trees-Cd-Cover-Front.jpg'
     },{
         title: "Supermodel",
         artist: "Jill Sobule",
-        mp3: "mp3",
-        img_url: 'image here'
+        mp3: "Supermodel_JillSobule.mp3",
+        img_url: 'http://1.bp.blogspot.com/_WOGf6Z-X8Wk/Sf-mnhsB_AI/AAAAAAAAEqQ/zj86USU3Nfg/s400/JillSobule-01-big.jpg'
     },{
         title: "Rollin' With My Homies",
         artist: "Coolio",
-        mp3: "mp3",
-        img_url: 'image here'
+        mp3: "RollinWithMyHomies_Coolio.mp3",
+        img_url: 'https://i.ytimg.com/vi/iPH1X5peBF8/maxresdefault.jpg'
     },{   
         title: "Valley Girl",
         artist: "Frank Zappa",
-        mp3: "mp3",
-        img_url: 'image here'
+        mp3: "ValleyGirl_FrankZappa.mp3",
+        img_url: 'https://upload.wikimedia.org/wikipedia/en/b/b0/Frank_Zappa_Valley_Girl_single.jpg'
     },{
         title: "Girls Like Me",
         artist: "Bonnie Hayes",
-        mp3: "mp3",
-        img_url: 'image here'
+        mp3: "GirlsLikeMe_BonnieHayes.mp3",
+        img_url: 'http://2.bp.blogspot.com/_UjRpW1RlbC0/RyMae00hhBI/AAAAAAAACUc/Ns7bQ16wYXY/s320/87+f.jpg'
     },{
         title: "Do You Really Want to Hurt Me",
         artist: ["Helen Terry", "Boy George"],
-        mp3: "mp3",
-        img_url: 'image here'
+        mp3: "DoYouReallyWantToHurtMe_BoyGeorge.mp3",
+        img_url: 'https://upload.wikimedia.org/wikipedia/en/b/b1/Do_You_Really_Want_To_Hurt_Me.jpg'
+    },{
+        title: "Maniac",
+        artist: "Michael Sombello",
+        mp3: "Maniac_MichaelSombello.mp3",
+        img_url:  "https://popvoid.files.wordpress.com/2015/03/maniac-900x894.jpg"
+    },{
+        title: "Beautiful Life",
+        artist: "Ace of Base",
+        mp3: "BeautifulLife_AceOfBase.mp3",
+        img_url: "http://www.freecodesource.com/album-cover/51ERNynjPWL/Ace-of-Base-Beautiful-Life-[Vinyl].jpg"
 
 
     }
