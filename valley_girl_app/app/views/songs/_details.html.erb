@@ -1,0 +1,16 @@
+
+<% @songs.each do |song| %>
+
+<h1><%= song.title %></h1><br/>
+
+<h3><%= song.artist %></h3><br/>
+
+<img src="<%= song.img_url %>"><br/><hr/>
+
+<audio controls src="../sounds/<%= song.mp3 %>" ></audio><br/>
+
+<% end %>
+
+
+
+
