@@ -7,6 +7,8 @@ Rails.application.routes.draw do
 
 end
 
+
+# EMILYs-MacBook-Pro-2:valley_girl_app emilymccormick$ rake routes
 #     Prefix Verb   URI Pattern                Controller#Action
 #     stores GET    /stores(.:format)          stores#index
 #            POST   /stores(.:format)          stores#create
@@ -32,4 +34,5 @@ end
 #            PATCH  /movies/:id(.:format)      movies#update
 #            PUT    /movies/:id(.:format)      movies#update
 #            DELETE /movies/:id(.:format)      movies#destroy
-
+#       root GET    /                          landings#index
+# EMILYs-MacBook-Pro-2:valley_girl_app emilymccormick$ 
