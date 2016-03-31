@@ -122,22 +122,34 @@ songs = Song.create([
 stores = Store.create([
     {   
         name: 'Nasty Gal',
-        location: '1254 3rd St Promenade Santa Monica, CA 90401'
+        location: '1254 3rd St Promenade Santa Monica, CA 90401',
+        lat: 34.017339,
+        lng:  -118.366452
     },{
         name: 'Fred Segal',
-        location: 'i8100 Melrose Ave, Los Angeles, CA 90046'
+        location: '8100 Melrose Ave, Los Angeles, CA 90046',
+        lat: 34.083729,
+        lng: -118.366409
     },{
         name: 'Intermix',
-        location: '110 N Robertson Blvd, Los Angeles, CA 90048'
+        location: '110 N Robertson Blvd, Los Angeles, CA 90048',
+        lat: 34.075957,
+        lng: -118.383448
     },{
         name: 'Kitson',
-        location: '100 W Broadway, Glendale, CA 91210'
+        location: '115 S Robertson Blvd, Los Angeles, CA 90048',
+        lat: 34.078322,
+        lng: -118.384752
     },{   
         name: 'Barneys',
-        location: '9570 Wilshire Blvd, Beverly Hills, CA 90212'
+        location: '9570 Wilshire Blvd, Beverly Hills, CA 90212',
+        lat: 34.070506,
+        lng: -118.402262
     },{   
         name: 'Sherman Oaks Galleria',
-        location: '15301 Ventura Blvd, Sherman Oaks, CA 91403'
+        location: '15301 Ventura Blvd, Sherman Oaks, CA 91403',
+        lat: 34.155500,
+        lng: -118.467376
     }
 ])
 
