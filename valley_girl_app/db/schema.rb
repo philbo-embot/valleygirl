@@ -11,19 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160330174534) do
+ActiveRecord::Schema.define(version: 20160331183656) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "movies", force: :cascade do |t|
     t.string  "title"
-    t.float   "year"
+    t.integer "year"
     t.string  "writer"
     t.string  "actors"
     t.text    "plot"
     t.text    "img_url"
     t.decimal "rating"
+    t.text    "user_comments"
   end
 
   create_table "songs", force: :cascade do |t|
@@ -31,11 +32,15 @@ ActiveRecord::Schema.define(version: 20160330174534) do
     t.string "artist"
     t.text   "mp3"
     t.text   "img_url"
+    t.text   "user_comments"
   end
 
   create_table "stores", force: :cascade do |t|
-    t.string "name"
-    t.text   "location"
+    t.string  "name"
+    t.text    "location"
+    t.decimal "lat"
+    t.decimal "lng"
+    t.text    "user_comments"
   end
 
 end

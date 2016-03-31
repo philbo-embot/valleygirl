@@ -8,14 +8,21 @@
 <h1><%= @movie.title %></h1>
 <br/>
 
-<img src="<%= @movie.img_url %>"></p>
-<p>year: <%= @movie.year %></p>
-<p>writer: <%= @movie.writer %></p>
-<p>actors: <%= @movie.actors %></p>
-<p>plot: <%= @movie.plot %></p>
-<p>imdb rating: <%= @movie.rating %></p>
-<br/>
+<img id="movie-image" src="<%= @movie.img_url %>"></p>
 
+<div id="movie-info">
+	<p>year: <%= @movie.year %></p>
+	<p>writer: <%= @movie.writer %></p>
+	<p>actors: <%= @movie.actors %></p>
+	<p>plot: <%= @movie.plot %></p>
+	<p>imdb rating: <%= @movie.rating %></p>
+</div>
+<br/>
+<div>
+	<h3>ADD COMMENTS</h3>
+	<%= render :partial => 'comments' %>
+</div>
+<br/>
 <%= link_to 'EDIT', edit_movie_path(@movie.id) %>
 
 <br/>

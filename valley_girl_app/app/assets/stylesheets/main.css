@@ -5,6 +5,8 @@
   font-family: arial;
   text-decoration: none;
   color: black;
+
+  /*FONTS FOR POSSIBLE LATER USE*/
   /*font-family: 'Homemade Apple';*/
   /*font-family: 'Press Start 2P';*/
   /*font-family: 'Diplomata';*/
@@ -86,5 +88,12 @@ button:hover {
 #fer-sure-sound {
   float: right;
 }
+
+/*/////////////SHOW PAGES DISPLAY///////////////*/
+
+#song-image {
+  width: 30%;
+}
+
 
 
