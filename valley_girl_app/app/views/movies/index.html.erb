@@ -6,11 +6,18 @@
 	<header>
 		<h1>AWESOME MOVIES</h1>
 	</header>
+<br/>
 
 <body>
 <% @movies.each do |movie| %>
-	<h2><a class="links" href= "/movies/<%= movie.id%>"> <%= movie.title %> </a></body></h2>
-<% end %>
+	<div class="links">
+		<a href= "/movies/<%= movie.id%>"> <%= movie.title %> </a>
+	</div>
+		<% end %>
+<br/>
+<%= link_to 'NEW', new_movie_path %>
+<br/>
+<%= link_to "OMIGAWD. TAKE ME BACK TO THE HOMEPAGE", root_path %>
 </body>
 
 </html>

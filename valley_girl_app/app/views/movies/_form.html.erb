@@ -1,0 +1,12 @@
+<div>
+<%=form_for @movie do |form| %>
+	title: <%= form.text_field :title %><br/>
+	writer: <%= form.text_field :writer %><br/>
+	actors: <%= form.text_field :actors %><br/>
+	plot: <%= form.text_field :plot %><br/>
+	img_url: <%= form.text_field :img_url %><br/>
+	year: <%= form.text_field :year %><br/>
+	rating: <%= form.text_field :rating %><br/>
+	<%= form.submit %>
+<% end %>
+</div>

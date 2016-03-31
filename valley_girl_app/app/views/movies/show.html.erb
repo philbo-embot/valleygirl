@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EDIT</title>
+</head>
+<body>
+
 <h1><%= @movie.title %></h1>
 <br/>
 
@@ -6,4 +13,12 @@
 <p>writer: <%= @movie.writer %></p>
 <p>actors: <%= @movie.actors %></p>
 <p>plot: <%= @movie.plot %></p>
+<p>imdb rating: <%= @movie.rating %></p>
+<br/>
 
+<%= link_to 'EDIT', edit_movie_path(@movie.id) %>
+
+<br/>
+<%= link_to "OMIGAWD. TAKE ME BACK TO THE HOMEPAGE", root_path %>
+</body>
+</html>

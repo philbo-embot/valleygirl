@@ -1,22 +1,84 @@
 * {
 	margin: 0;
 	padding: 0;
-	/*background: red;*/
+	text-align: center;
+  font-family: arial;
+  text-decoration: none;
+  color: black;
+  /*font-family: 'Homemade Apple';*/
+  /*font-family: 'Press Start 2P';*/
+  /*font-family: 'Diplomata';*/
+}
+
+#totally_valley_logo {
+  margin: 5em;
+  width: 60%;
 }
 
 body {
 	background-image: url("valley_girl_background.png");
-/*	background-image: asset-data-url("../images/valley_girl_background.png"); 
-*/	/*background: asset-url("/images/valley_girl_background.png", image);*/
-  /*background: url("/images/valley_girl_background.png") no-repeat center center fixed;*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-repeat: none;
   height: 100%;
 }
 
+.links {
+  font-size: 2.5em;
+  text-decoration: none;
+}
+
 .links:hover {
+   transform: scale(1.1); 
+}
+
+.link:hover {
   transform: scale(1.1);
 }
+
+button {
+  background-color: #ee1289;
+  color: #f930a3;
+  border: none;
+  margin: 1em;
+  font-size: 3em;
+  font-weight: bold;
+  bottom:fixed;
+}
+
+button:hover {
+   transform: scale(1.5);
+}
+
+/*////////////MAIN LINKS ON LANDING PAGE/////////////*/
+#movies-link {
+  float: left;
+  margin: 0em 5em ;
+}
+
+#translator-link {
+  float: right;
+  margin: 1em 2em ;
+}
+
+#songs-link {
+  float: left;
+  margin: 1.5em 0em 0em 24em;
+}
+
+#stores-link {
+  float: left;
+  margin: .5em 50em ;
+}
+/*////////////SOUND BUTTONS ON LANDING PAGE///////////////*/
+
+#as-if-sound {
+  float: left;
+}
+
+#fer-sure-sound {
+  float: right;
+}
+
+

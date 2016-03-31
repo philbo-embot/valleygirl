@@ -5,27 +5,27 @@
 </head>
 <body>
 
-<header>
-	<img src="images/totally_valley_logo.png"/>
-</header>
+	<header>
+		<img id="totally_valley_logo" src="images/totally_valley_logo.png"/>
+	</header>
 
-<section class="links">
-	<a class="links" href= "/movies"><img id="movies" src="images/movies.png"></a><br>
-	<a class="links" href= "/translator"><img id="translator" src="images/translator.png"></a>
-	<a class="links" href= "/songs"><img id="songs" src="images/songs.png">
-	<a class="links" href= "/stores"><img id="stores" src="images/stores.png"></a>
-</section>
-
-<section id="sounds">
-	<button onclick="this.firstChild.play()"><audio src="sounds/as_if.mp3"></audio>as if</button>
-  	</button> 
-  	<button onclick="this.firstChild.play()"><audio src="sounds/like_wow.mp3"></audio>wow</audio>
-  	</button> 
-  	<button onclick="this.firstChild.play()"><audio src="sounds/popular.mp3"></audio>popular</audio>
-  	</button> 
-  	<button onclick="this.firstChild.play()"><audio src="sounds/fer_sure.mp3"></audio>fer sure</audio>
-  	</button> 
-<section>
+	<section>
+		<div class="link"><a id="movies-link" href= "/movies"><img src="images/movies.png"></a><br></div>
+		<div class="link"><a id="translator-link" href= "/translator"><img src="images/translator.png"></a></div>
+		<div class="link"><a id="songs-link" class="link" href= "/songs"><img src="images/songs.png"></div>
+		<div class="link"><a id="stores-link" class="link" href= "/stores"><img src="images/stores.png"></a></div>
+	</section>
+	<br/>
+	<section class="sounds">
+		<button id="as-if-sound" onclick="this.firstChild.play()"><audio src="sounds/as_if.mp3"></audio>as if</button>
+	  	</button> 
+	  	<button id="wow-sound" onclick="this.firstChild.play()"><audio src="sounds/like_wow.mp3"></audio>wow</audio>
+	  	</button> 
+	  	<button id="popular-sound" onclick="this.firstChild.play()"><audio src="sounds/popular.mp3"></audio>popular</audio>
+	  	</button> 
+	  	<button id="fer-sure-sound" onclick="this.firstChild.play()"><audio src="sounds/fer_sure.mp3"></audio>fer sure</audio>
+	  	</button> 
+	<section>
 
 </body>
 
