@@ -1,13 +1,22 @@
-<h1>BITCHIN' SONGS</h1>
-<% @songs.each do |song| %><br/>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SONGS</title>
 
-<%= link_to "#{song.title}", song_path(song.id) %><br/>
+	<h1>BITCHIN' SONGS</h1>
 
-<% end %><br/>
+	<% @songs.each do |song| %><br/>
+	<div class="links">
+		<%= link_to "#{song.title}", song_path(song.id) %><br/>
+	</div>
+		<% end %>
+
+	<br/>
 
 
-<%= link_to "CREATE", new_song_path %><br/>
-<%= link_to "HOME", root_path %>
+	<%= link_to "CREATE", new_song_path %><br/>
+	<%= link_to "HOME", root_path %>
 
-
+</body>
+</html>
 

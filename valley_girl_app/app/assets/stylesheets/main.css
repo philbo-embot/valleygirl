@@ -15,6 +15,12 @@
   width: 60%;
 }
 
+h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 4em;
+}
+
 body {
 	background-image: url("valley_girl_background.png");
   -webkit-background-size: cover;
