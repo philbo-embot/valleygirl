@@ -1,20 +1,36 @@
 class SongsController < ApplicationController
 	before_action :return_song, only: [:show, :edit, :update, :destroy, :remove_song]
 	def index
-		@test = "this is hello from the songs controller"
 		@songs = Song.all
-
-	end
-
-	def create
-
 	end
 
 	def show
-		@test = "this is hello from the songs controller"
 		@songs = Song.all
+	end
 
+	def new
+		@song = Song.new
+	end
 
+	def create
+		@song = Song.create(song_params)
+		redirect_to songs_path
+	end
+
+	def edit
+		@songs = Song.find(params[:id])
+	end
+
+	def update
+		# @song = Song.find(params[:id])
+		@song.update_attributes(song_params)
+		redirect_to songs_path
+	end
+
+	def destroy
+		# @song = Song.find(params[:id])
+		@song.destroy
+		redirect_to songs_path
 	end
 
 	# PRIVATE METHODS

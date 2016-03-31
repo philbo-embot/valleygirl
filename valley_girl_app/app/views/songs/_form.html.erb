@@ -1,0 +1,7 @@
+<%= form_for @song do |form| %>
+	Title: <%= form.text_field :title %><br/>
+	Artist: <%= form.text_field :artist %><br/>
+	mp3: <%= form.text_field :mp3 %><br/>
+	img_url: <%= form.text_field :img_url %><br/>
+	<%= form.submit %>
+<% end %>
