@@ -1,4 +1,3 @@
-<h1>BITCHIN' SONGS</h1>
 <h1><%= @song.title %></h1><br/>
 
 <h3><%= @song.artist %></h3><br/>
@@ -8,5 +7,5 @@
 <audio controls src="../sounds/<%= @song.mp3 %>" ></audio><br/>
 
 <%= link_to "EDIT", edit_song_path %><br/>
-<%= link_to "HOME", root_path %><br/>
+<%= link_to "MAIN", root_path %><br/>
 <%= link_to "ALL SONGS", songs_path %>
