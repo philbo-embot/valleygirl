@@ -1,5 +1,5 @@
 class MoviesController < ApplicationController
-# before_action :return_movie, only: [:id, :show, :edit, :update, :destroy, :remove_movie]
+	before_action :return_movie, only: [:id, :show, :edit, :update]
 
 	def index
 		@movies = Movie.all
@@ -27,7 +27,7 @@ class MoviesController < ApplicationController
 	def update
 		@movie = Movie.find(params[:id])
 		@movie.update_attributes(movie_params)
-		redirect_to movies_path
+		redirect_to movies_path(@movie.id)
 	end
 
 	
@@ -37,12 +37,12 @@ class MoviesController < ApplicationController
 
 	private
 	
-	# def return_movie
-	# 	@movie = Movie.find(params[:id])
-	# end
+	def return_movie
+		@movie = Movie.find(params[:id])
+	end
 
 	def movie_params
-		params.require(:movie).permit(:title, :year, :writer, :actors, :plot, :img_url, :rating)
+		params.require(:movie).permit(:title, :year, :writer, :actors, :plot, :img_url, :rating, :user_comments)
 
 	end
 end

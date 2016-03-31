@@ -18,6 +18,8 @@
 	<p>imdb rating: <%= @movie.rating %></p>
 </div>
 <br/>
+<div id="movie-comments">
+<p>comments: <%= @movie.user_comments %></p>
 <div>
 	<h3>ADD COMMENTS</h3>
 	<%= render :partial => 'comments' %>
