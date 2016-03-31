@@ -1,11 +1,13 @@
-<h1>This is the songs index page</h1>
-
+<h1>BITCHIN' SONGS</h1>
 <% @songs.each do |song| %><br/>
 
 <%= link_to "#{song.title}", song_path(song.id) %><br/>
 
 <% end %><br/>
 
-<%= link_to "Home", root_path %>
+
+<%= link_to "CREATE", new_song_path %><br/>
+<%= link_to "HOME", root_path %>
+
 
 

@@ -1,11 +1,12 @@
-
+<h1>BITCHIN' SONGS</h1>
 <h1><%= @song.title %></h1><br/>
 
 <h3><%= @song.artist %></h3><br/>
 
-<img src="<%= @song.img_url %>"><br/><hr/>
+<img src="<%= @song.img_url %>"><br/>
 
 <audio controls src="../sounds/<%= @song.mp3 %>" ></audio><br/>
 
-<%= link_to "Home", root_path %><br/>
-<%= link_to "Back to all songs", songs_path %>
+<%= link_to "EDIT", edit_song_path %><br/>
+<%= link_to "HOME", root_path %><br/>
+<%= link_to "ALL SONGS", songs_path %>
