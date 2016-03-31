@@ -3,17 +3,20 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['GOOGLE_MAPS_KEY'] %>&callback=initMap"
+    async defer></script>
     <meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
-  <style>
-      html, body {
-        margin: 1em;
-        padding: 1em 2em;
-      }
-      #map {
-        height: 400px;
-      }
-    </style>
+        <style>
+          html, body {
+           /* height: 600px;*/
+            margin: 1em;
+            padding: 1em 2em;
+          }
+          #map {
+            height: 600px;
+          }
+        </style>
   </head>
   <body>
 
@@ -23,23 +26,18 @@
     </div>
     <% end %>
 
-  <br/>
+    <br/>
 
     <div id="map"></div>
-    <script>
-      var map;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 34.071489, lng: -118.400564},
-          zoom: 8
-        });
-      }
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['GOOGLE_MAPS_KEY'] %>&callback=initMap"
-    async defer></script>
  
-<%= link_to "CREATE", new_store_path %><br/>
-<%= link_to "MAIN", root_path %>
+ 
+    <%= link_to "CREATE", new_store_path %><br/>
+    <%= link_to "MAIN", root_path %>
 
  </body>
 </html>
+
+
+
+
+
