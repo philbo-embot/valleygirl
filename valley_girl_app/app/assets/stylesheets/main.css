@@ -109,3 +109,35 @@ textarea {
 }  
 
 
+
+
+/*CSS FOR HTE QUIZ*/
+
+
+.quiz {
+  border: 1px solid black;
+  margin: 0 15em;
+  padding: 1em;
+  text-align: left;
+}
+
+input[type="radio"]{
+  margin: .5em 1.5em ;
+}
+
+#submit {
+  margin: .2em 15em;
+  padding: .5em;
+  text-align: center;
+  border: 1px solid black;
+  height: 2em;
+  width: 15em;
+}
+
+#outcome {
+  height: 4em;
+  width: 10em;
+  padding: 2em;
+  overflow: auto;
+  word-break: break-word;
+}
