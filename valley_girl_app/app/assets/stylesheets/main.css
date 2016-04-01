@@ -1,7 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
-	text-align: center;
+/*	text-align: center;*/
   font-family: arial;
   text-decoration: none;
   color: black;
@@ -12,9 +12,19 @@
   /*font-family: 'Diplomata';*/
 }
 
+.links-container {
+  float: right;
+  width: 100%;
+}
+
+.link {
+  display: inline-block;
+}
+
+
 #totally_valley_logo {
-  margin: 5em;
-  width: 50%;
+  margin-left: 30em;
+  width: 25%;
 }
 
 h1 {
@@ -32,6 +42,10 @@ body {
   height: 100%;
 }
 
+#logo-links {
+  display: inline-block;
+}
+
 .links {
   font-size: 2.5em;
   text-decoration: none;
@@ -46,13 +60,13 @@ body {
 }
 
 button {
-  background-color: #ee1289;
-  color: #f930a3;
+  background-color: #e8e8e8;
+  color: white;
   border: none;
   margin: 1em;
   font-size: 3em;
   font-weight: bold;
-  bottom:fixed;
+/*  bottom:fixed;*/
 }
 
 button:hover {
@@ -61,49 +75,49 @@ button:hover {
 
 /*////////////MAIN LINKS ON LANDING PAGE/////////////*/
 #movies-link {
-  float: left;
-  margin: 0em 5em ;
+/*  float: left;
+  margin: 0em 5em ;*/
 }
 
 #translator-link {
-  float: right;
-  margin: 1em 2em ;
+/*  float: right;
+  margin: 1em 2em ;*/
 }
 
 #songs-link {
-  float: left;
-  margin: 1.5em 0em 0em 24em;
+/*  float: left;
+  margin: 1.5em 0em 0em 24em;*/
 }
 
 #stores-link {
-  float: left;
-  margin: .5em 50em ;
+/*  float: left;
+  margin: .5em 50em ;*/
 }
 /*////////////SOUND BUTTONS ON LANDING PAGE///////////////*/
 
 #as-if-sound {
-  float: left;
+/*  float: left;*/
 }
 
 #fer-sure-sound {
-  float: right;
+/*  float: right;*/
 }
 
 /*/////////////SHOW PAGES DISPLAY///////////////*/
 
 #song-image {
   width: 30%;
-  box-shadow: 20px 20px 10px #c60071;
+  box-shadow: 20px 20px 10px #888888;
 }
 
 #movie-image {
-  box-shadow: 20px 20px 10px #c60071;
+  box-shadow: 20px 20px 10px #888888;
 }
 
 textarea {
   width: 30%;
   height: 10em;
-  box-shadow: 20px 20px 10px #c60071;
+  box-shadow: 20px 20px 10px #888888;
   padding: 1em;
   font-size: 1em;
 }  
