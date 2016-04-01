@@ -5,7 +5,9 @@ class SongsController < ApplicationController
 	end
 
 	def show
-		@songs = Song.all
+		@songs = Song.find(params[:id])
+		@params = params[:id]
+		@next_song= @params.to_i + 1
 	end
 
 	def new
@@ -41,7 +43,7 @@ class SongsController < ApplicationController
 	end
 
 	def song_params
-		params.require(:song).permit(:title, :artist, :mp3, :img_url)
+		params.require(:song).permit(:title, :artist, :mp3, :img_url, :user_comments)
 	end
 
 end

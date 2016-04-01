@@ -4,8 +4,15 @@
 
 <img id="song-image" src="<%= @song.img_url %>"><br/>
 
-<audio controls src="../sounds/<%= @song.mp3 %>" ></audio><br/>
+<audio controls src="../sounds/<%= @song.mp3 %>" ></audio>
+<br/>
 
+<div id="song-comments">
+	<h3>ADD COMMENTS</h3>
+	<%= render :partial => 'comments' %>
+</div>
+
+<%= link_to "NEXT SONG", "/songs/#{@next_song}" %><br/>
 <%= link_to "EDIT", edit_song_path %><br/>
 <%= link_to "MAIN", root_path %><br/>
 <%= link_to "ALL SONGS", songs_path %>
