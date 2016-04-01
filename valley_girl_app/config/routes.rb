@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   	resources   :stores
   	resources   :songs
   	resources   :movies
+  	resources   :quizes
   	root 'landings#index' 
 
 end
