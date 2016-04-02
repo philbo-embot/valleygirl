@@ -6,21 +6,23 @@
 
 <body>
 	<header>
-		<img src="images/songs.png">
+		<a href= "/" ><img id="songs-logo" src="images/songs.png"></a>
 	</header>
 <br/>
 
 <body>
-	<% @songs.each do |song| %><br/>
-	<div class="links">
-		<h2><%= link_to "#{song.title}", song_path(song.id) %></h2><br/>
-	</div>
+	<div id="songlinks-container">
+		<% @songs.each do |song| %>
+		<h2 class="links"><%= link_to "#{song.title}", song_path(song.id) %></h2>
 		<% end %>
-
+		<br/>
+		<h3><%= link_to '+ Add a Song', new_song_path %></h3>
+	</div>
 	<br/>
 
-	<%= link_to "CREATE", new_song_path %><br/>
-	<%= link_to "MAIN", root_path %>
+	<footer>	
+		<a href= "/" ><img id="totally-valley-link" src="images/totally_valley_logo.png"/></a>
+	</footer>
 
 </body>
 </html>

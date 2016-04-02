@@ -6,6 +6,7 @@
   color: black;
 }
 
+/*////////////LANDING PAGE/////////////////*/
 .links-container {
   float: right;
   width: 95%;
@@ -19,6 +20,12 @@
 #totally_valley_logo {
   margin-left: 26em;
   width: 35%;
+}
+
+h1 {
+  color: black;
+  font-weight: bold;
+  font-size: 3.5em;
 }
 
 h2 {
@@ -52,6 +59,20 @@ body {
   transform: scale(1.1);
 }
 
+/*LINK BACK TO MAIN PAGE THAT SHOWS ON ALL PAGES*/
+
+#totally-valley-link {
+    width: 10%;
+    margin-bottom: -10em;
+    margin-left: 1em;
+}
+
+#totally-valley-link:hover {
+    transform: scale(1.1);
+}
+
+/*////////////SOUND BUTTONS ON LANDING PAGE///////////////*/
+
 button {
   background-color: #e8e8e8;
   color: white;
@@ -64,30 +85,6 @@ button {
 button:hover {
    transform: scale(1.5);
 }
-
-#totally-valley-link {
-    width: 10%;
-    margin-bottom: -10em;
-    margin-left: 1em;
-}
-/*//////////////MOVIE INDEX PAGE///////////////////*/
-
-#movielinks-container {
-  background-color: #ffffff;
-  border: 1px solid black;
-  opacity: 0.6;
-  float: right;
-  padding: 3.5em;
-  margin-top: -32em;
-  margin-right: 3em;
-}
-
-#movies-logo {
-  width: 35%;
-  margin: 5em;
-}
-
-/*////////////SOUND BUTTONS ON LANDING PAGE///////////////*/
 
 #as-if-sound {
   float: left;
@@ -112,6 +109,40 @@ button:hover {
   margin-top: -8em;
 }
 
+/*//////////////MOVIE & SONGS INDEX PAGES///////////////////*/
+
+#movielinks-container {
+  background-color: #ffffff;
+  border: 1px solid black;
+  border-radius: 4px;
+  opacity: 0.6;
+  float: right;
+  padding: 3.5em;
+  margin-top: -32em;
+  margin-right: 3em;
+}
+
+#movies-logo {
+  width: 35%;
+  margin: 5em;
+}
+
+#songlinks-container {
+  background-color: #ffffff;
+  border: 1px solid black;
+  border-radius: 4px;
+  opacity: 0.6;
+  float: right;
+  padding: 2em;
+  margin-top: -32em;
+  margin-right: 3em;
+}
+
+#songs-logo {
+  width: 35%;
+  margin: 5em;
+}
+
 /*/////////////SHOW PAGES DISPLAY///////////////*/
 
 #song-image {
@@ -126,10 +157,36 @@ button:hover {
 textarea {
   width: 30%;
   height: 10em;
+  border-radius: 4px;
   box-shadow: 20px 20px 10px #888888;
   padding: 1em;
   font-size: 1em;
 }  
+
+/*/////////////CREATE NEW PAGES DISPLAY///////////////*/
+
+#add-movie-title {
+  text-align:center;
+}
+
+.form {
+  text-align: center;
+  background-color: #ffffff;
+  border: 1px solid black;
+  border-radius: 4px;
+  width: 40%;
+  opacity: 0.6;
+  padding: 2em;
+  margin-top:1em;
+  margin-left:15em;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+input {
+  width: 25%;
+  height: 2.5em;
+}
 
 
 /*//////////CSS FOR THE QUIZ///////////////*/
