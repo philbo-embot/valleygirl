@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>EDIT</title>
+	<title>Edit Movie</title>
 </head>
 <body>
-	<header>
-		<h1>EDIT MOVIE</h1>
+	<header id="page-title">
+		<h1 >Edit a Movie</h1>
 	</header>
 
-	<div>
-	<%= render :partial => 'form' %>
-	</div>
-<br/>
-<%= link_to "OMIGAWD. TAKE ME BACK TO THE HOMEPAGE", root_path %>
+	<section class="form-container">
+		<div class="form">
+			<%= render :partial => 'form' %>
+		</div>
+	</section>
+	<br/>
+
+	<footer>	
+		<a href= "/" ><img id="totally-valley-link" src="/images/totally_valley_logo.png"/></a>
+		<a href= "/movies" ><img id="totally-valley-link" src="/images/movies.png"/></a>
+	</footer>
+
 </body>
 </html>

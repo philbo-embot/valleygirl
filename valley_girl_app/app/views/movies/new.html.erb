@@ -5,16 +5,19 @@
 </head>
 
 <body>
-	<header id="add-movie-title">
+	<header id="page-title">
 		<h1 >Add a Movie</h1>
 	</header>
 
-	<div class="form">
-	<%= render :partial => 'form' %>
-	</div>
+	<section class="form-container">
+		<div class="form">
+		<%= render :partial => 'form' %>
+		</div>
+	</section>
 
 	<footer>	
 		<a href= "/" ><img id="totally-valley-link" src="/images/totally_valley_logo.png"/></a>
+		<a href= "/movies" ><img id="totally-valley-link" src="/images/movies.png"/></a>
 	</footer>
 
 </body>
