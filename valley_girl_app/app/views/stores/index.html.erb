@@ -1,5 +1,3 @@
-<h1>RAD STORES</h1>
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -19,10 +17,12 @@
         </style>
   </head>
   <body>
-
+    <header>
+      <img src="images/stores.png">
+    </header>
     <% @stores.each do |store| %><br/>
     <div class="store-links">
-      <%= link_to "#{store.name}", store_path(store.id) %><br/>
+      <h2><%= link_to "#{store.name}", store_path(store.id) %><h2><br/>
     </div>
     <% end %>
 

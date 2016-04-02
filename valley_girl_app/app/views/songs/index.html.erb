@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>SONGS</title>
+	<title>Songs</title>
+</head>
 
-	<h1>BITCHIN' SONGS</h1>
+<body>
+	<header>
+		<img src="images/songs.png">
+	</header>
+<br/>
 
+<body>
 	<% @songs.each do |song| %><br/>
 	<div class="links">
-		<%= link_to "#{song.title}", song_path(song.id) %><br/>
+		<h2><%= link_to "#{song.title}", song_path(song.id) %></h2><br/>
 	</div>
 		<% end %>
 
 	<br/>
-
 
 	<%= link_to "CREATE", new_song_path %><br/>
 	<%= link_to "MAIN", root_path %>

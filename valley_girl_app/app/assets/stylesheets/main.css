@@ -1,20 +1,14 @@
 * {
 	margin: 0;
 	padding: 0;
-/*	text-align: center;*/
-  font-family: arial;
   text-decoration: none;
+  font-family: 'Dosis', sans-serif;
   color: black;
-
-  /*FONTS FOR POSSIBLE LATER USE*/
-  /*font-family: 'Homemade Apple';*/
-  /*font-family: 'Press Start 2P';*/
-  /*font-family: 'Diplomata';*/
 }
 
 .links-container {
   float: right;
-  width: 100%;
+  width: 95%;
 }
 
 .link {
@@ -23,14 +17,18 @@
 
 
 #totally_valley_logo {
-  margin-left: 30em;
-  width: 25%;
+  margin-left: 26em;
+  width: 35%;
 }
 
-h1 {
-  color: white;
+h2 {
+  color: black;
   font-weight: bold;
-  font-size: 4em;
+  font-size: 3em;
+}
+
+h3 {
+  font-size: 2em;
 }
 
 body {
@@ -46,11 +44,6 @@ body {
   display: inline-block;
 }
 
-.links {
-  font-size: 2.5em;
-  text-decoration: none;
-}
-
 .links:hover {
    transform: scale(1.1); 
 }
@@ -64,43 +57,59 @@ button {
   color: white;
   border: none;
   margin: 1em;
-  font-size: 3em;
+  font-size: 2.5em;
   font-weight: bold;
-/*  bottom:fixed;*/
 }
 
 button:hover {
    transform: scale(1.5);
 }
 
-/*////////////MAIN LINKS ON LANDING PAGE/////////////*/
-#movies-link {
-/*  float: left;
-  margin: 0em 5em ;*/
+#totally-valley-link {
+    width: 10%;
+    margin-bottom: -10em;
+    margin-left: 1em;
+}
+/*//////////////MOVIE INDEX PAGE///////////////////*/
+
+#movielinks-container {
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+  float: right;
+  padding: 3.5em;
+  margin-top: -32em;
+  margin-right: 3em;
 }
 
-#translator-link {
-/*  float: right;
-  margin: 1em 2em ;*/
+#movies-logo {
+  width: 35%;
+  margin: 5em;
 }
 
-#songs-link {
-/*  float: left;
-  margin: 1.5em 0em 0em 24em;*/
-}
-
-#stores-link {
-/*  float: left;
-  margin: .5em 50em ;*/
-}
 /*////////////SOUND BUTTONS ON LANDING PAGE///////////////*/
 
 #as-if-sound {
-/*  float: left;*/
+  float: left;
+  margin-top: -12em;
+}
+
+#wow-sound {
+  float: left;
+  margin-left: 6em;
+  margin-top: -7.5em;
+}
+
+#popular-sound {
+  float: right;
+  margin-right: 5em;
+  margin-top: -4em;
 }
 
 #fer-sure-sound {
-/*  float: right;*/
+  float: right;
+  margin-right: 7em;
+  margin-top: -8em;
 }
 
 /*/////////////SHOW PAGES DISPLAY///////////////*/
@@ -123,9 +132,7 @@ textarea {
 }  
 
 
-
-
-/*CSS FOR HTE QUIZ*/
+/*//////////CSS FOR THE QUIZ///////////////*/
 
 
 .quiz {

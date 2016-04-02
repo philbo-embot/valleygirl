@@ -18,8 +18,11 @@
 	<p>imdb rating: <%= @movie.rating %></p>
 </div>
 <br/>
+
 <div id="movie-comments">
-<p>comments: <%= @movie.user_comments %></p>
+	<p>comments: <%= @movie.user_comments %></p>
+</div>
+
 <div>
 	<h3>ADD COMMENTS</h3>
 	<%= render :partial => 'comments' %>
@@ -27,7 +30,6 @@
 <br/>
 <%= link_to 'EDIT', edit_movie_path(@movie.id) %>
 
-<br/>
 <%= link_to "MAIN", root_path %>
 </body>
 </html>

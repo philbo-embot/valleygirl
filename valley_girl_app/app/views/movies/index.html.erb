@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>MOVIES</title>
+	<title>Movies</title>
 </head>
+<body>
 	<header>
-		<h1>AWESOME MOVIES</h1>
+		<a href= "/" ><img id="movies-logo" src="images/movies.png"></a>
 	</header>
 <br/>
 
 <body>
-<% @movies.each do |movie| %>
-	<div class="links">
-		<a href= "/movies/<%= movie.id%>"> <%= movie.title %> </a>
-	</div>
+	<div id="movielinks-container">
+		<% @movies.each do |movie| %>
+		<h2 class="links"><a href= "/movies/<%= movie.id%>"> <%= movie.title %> </a></h2>	
 		<% end %>
-<br/>
-<%= link_to 'NEW', new_movie_path %>
-<br/>
-<%= link_to "MAIN", root_path %>
+		<br/>
+		<h3><%= link_to '+ Add a Movie', new_movie_path %></h3>
+	</div>	
+	<footer>	
+		<a href= "/" ><img id="totally-valley-link" src="images/totally_valley_logo.png"/></a>
+	</footer>
 </body>
 
 </html>
