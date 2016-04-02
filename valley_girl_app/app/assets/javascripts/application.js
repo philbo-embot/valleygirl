@@ -42,8 +42,8 @@ function calcscore(){
 	    } else {
 	    	display = "you're so skanky"
 	    } // closeelse if
-
 	 $("input[name=sum]").val(score)
+
    $("#outcome").val(display);
 	}; //close calcOutcome
 
@@ -162,7 +162,11 @@ function initMap() {
 // WORKING CODE FOR THE SHOPPING BAG ICON
 
 
-var icon = '../images/shopping_bag.png';
+var icon = 
+	'../images/shopping_bag.png';
+
+<%= @store.location %>
+
 
 function setMarkers(map) {
 
