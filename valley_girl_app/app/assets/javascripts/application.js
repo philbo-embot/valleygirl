@@ -71,6 +71,8 @@ function calcscore(){
 
 
 var map;
+var marker;
+var info;
 
 function initMap() {
 
@@ -79,31 +81,48 @@ function initMap() {
     center: {lat: 34.071489, lng: -118.400564}
   });
 
+// function initialize() {
+//   var mapOptions = {
+//           center: new google.maps.LatLng(34.071489, -118.400564),
+//           zoom: 8,
+//           mapTypeId: google.maps.MapTypeId.NORMAL,
+//           panControl: true,
+//           scaleControl: false,
+//           streetViewControl: true,
+//           overviewMapControl: true
+//         };
+//         // initializing map
+//         map = new google.maps.Map(document.getElementById("#map"),mapOptions);
 
-  var styles = [
-    {
-      stylers: [
-        // { hue: "#00ffe6" },
-        { hue: "#ee1289" },
-        { saturation: 30 }
-      ]
-    },{
-      featureType: "road",
-      elementType: "geometry",
-      stylers: [
-        { lightness: 500 },
-        { visibility: "simplified" }
-      ]
-    },{
-      featureType: "road",
-      elementType: "labels",
-      stylers: [
-        { visibility: "off" }
-      ]
-    }
-  ];
 
-  map.setOptions({styles: styles});
+// }
+
+
+//COMMENTING OUT PINK MAP
+  // var styles = [
+  //   {
+  //     stylers: [
+  //       // { hue: "#00ffe6" },
+  //       { hue: "#ee1289" },
+  //       { saturation: 30 }
+  //     ]
+  //   },{
+  //     featureType: "road",
+  //     elementType: "geometry",
+  //     stylers: [
+  //       { lightness: 500 },
+  //       { visibility: "simplified" }
+  //     ]
+  //   },{
+  //     featureType: "road",
+  //     elementType: "labels",
+  //     stylers: [
+  //       { visibility: "off" }
+  //     ]
+  //   }
+  // ];
+
+  // map.setOptions({styles: styles});
 
   setMarkers(map);
 
@@ -165,14 +184,13 @@ function initMap() {
 var icon = 
 	'../images/shopping_bag.png';
 
-<%= @store.location %>
 
 
 function setMarkers(map) {
 
   for (var i = 0; i < stores.length; i++) {
     var store = stores[i];
-    var marker = new google.maps.Marker({
+    marker = new google.maps.Marker({
       position: {lat: store[1], lng: store[2]},
       icon: icon,
     	map: map,
@@ -203,11 +221,22 @@ function setMarkers(map) {
 // 		});
 // } // end addMarkers
 
+function createInfoWindow(text){
+  var infowindow = new google.maps.InfoWindow({
+    content: text
+  });
+  return infowindow;
+}
 
 
+function initialize() {
+// add infowindow when clicking on the simple marker marker
+info = createInfoWindow("Congratulations!");
+google.maps.event.addListener(marker, 'click', function() {
+  info.open(map,marker);
+});
 
-
-
+}
 
 
 
