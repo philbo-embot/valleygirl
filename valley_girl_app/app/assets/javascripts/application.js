@@ -42,8 +42,8 @@ function calcscore(){
 	    } else {
 	    	display = "you're so skanky"
 	    } // closeelse if
-
 	 $("input[name=sum]").val(score)
+
    $("#outcome").val(display);
 	}; //close calcOutcome
 
@@ -59,145 +59,66 @@ function calcscore(){
 // JAVASCRIPT FOR MAP
 /////////////////////////////////////////////////////
 
-  var stores = [
+var icon = '../images/shopping_bag.png';
+var stores = [
     ['Nasty Gal', 34.017339, -118.366452],
     ['Fred Segal', 34.083729, -118.366409],
     ['Intermix', 34.075957, -118.383448],
     ['Kitson', 34.078322, -118.384752],
-    ['Barneys', 34.070506, -118.402262],
-    ['Sherman Oaks Galleria', 34.155500, -118.467376]
-  ];
-
-
-
-var map;
+    ['Sherman Oaks Galleria', 34.155500, -118.467376],
+    ['Barneys', 34.070506, -118.402262]
+];
 
 function initMap() {
 
-  map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 11,
-    center: {lat: 34.071489, lng: -118.400564}
-  });
 
+    map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 11,
+        center: {lat: 34.071489, lng: -118.400564}
+    }); // close map
 
-  var styles = [
-    {
-      stylers: [
-        // { hue: "#00ffe6" },
-        { hue: "#ee1289" },
-        { saturation: 30 }
-      ]
-    },{
-      featureType: "road",
-      elementType: "geometry",
-      stylers: [
-        { lightness: 500 },
-        { visibility: "simplified" }
-      ]
-    },{
-      featureType: "road",
-      elementType: "labels",
-      stylers: [
-        { visibility: "off" }
-      ]
-    }
-  ];
+    setMarkers(map,stores)
 
-  map.setOptions({styles: styles});
-
-  setMarkers(map);
-
-}
-
-///////////////////////////////////////////////////////////////////////////////////////////
-// THESE 2 GROUPS WORK FOR THE GOOGLE DOCS YELLOW STARS
-
-//   var goldStar = {
-//     path: 'M 125,5 155,90 245,90 175,145 200,230 125,180 50,230 75,145 5,90 95,90 z',
-//     fillColor: 'yellow',
-//     fillOpacity: 0.8,
-//     scale: 1,
-//     strokeColor: 'gold',
-//     strokeWeight: 14
-//   };
-
-
-//  function setMarkers(map) {
-
-//   for (var i = 0; i < stores.length; i++) {
-//     var store = stores[i];
-//     var marker = new google.maps.Marker({
-//       position: {lat: store[1], lng: store[2]},
-//       icon: goldStar,
-//     	 map: map,
-//       title: store[0]
-//     }); // close marker
-//   } // close for loop
-// } //close set markers
+  }
 
 
 
+  function setMarkers(map,store){
+
+      var marker, i
 
 
+for (i = 0; i < stores.length; i++)
+ {  
 
-/////////////////////////////////////////////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////////////////////////////
-// THIS WORKS FOR THE DEFAULT PINS
-
-// function setMarkers(map) {
-
-//   for (var i = 0; i < stores.length; i++) {
-//     var store = stores[i];
-//     var marker = new google.maps.Marker({
-//       position: {lat: store[1], lng: store[2]},
-//     	 map: map,
-//       title: store[0],
-//     }); // close marker
-//   } // close for loop
-// } //close set markers
-
-//////////////////////////////////////////////////////////////////////////////////////////
+ var store = stores[i][0]
+ var lat = stores[i][1]
+ var lng = stores[i][2]
 
 
-// WORKING CODE FOR THE SHOPPING BAG ICON
+ latlngset = new google.maps.LatLng(lat, lng);
+
+  var marker = new google.maps.Marker({  
+          map: map, title: store , position: latlngset, icon: icon
+        });
+        map.setCenter(marker.getPosition())
 
 
-var icon = '../images/shopping_bag.png';
+        var content = store;   
 
-function setMarkers(map) {
+  var infowindow = new google.maps.InfoWindow()
 
-  for (var i = 0; i < stores.length; i++) {
-    var store = stores[i];
-    var marker = new google.maps.Marker({
-      position: {lat: store[1], lng: store[2]},
-      icon: icon,
-    	map: map,
-      title: store[0]
-    }); // close marker
-  } // close for loop
-} //close set markers
+google.maps.event.addListener(marker,'click', (function(marker,content,infowindow){ 
+    return function() {
+        infowindow.setContent(content);
+        infowindow.open(map,marker);
+    };
+})(marker,content,infowindow));  
 
+};
 
-
-
-//JOSH'S ADD MARKER FUNCTION
-
-// var addMarkers = function(map) {
-
-// 	//ajax call to get location data
-// 	$.ajax('/locations/json').
-// 		done(function(result) {
-// 			// add location markers
-// 			for (var i=0; i < result.length; i++) {
-// 				marker = new google.maps.Marker ({
-// 				    map: map,
-// 				    icon: '../img/money_bag_sm.png',
-// 				    position: { lat: result[i].lat, lng: result[i].lng },
-// 				    title: result[i].name
-// 				});
-// 		  };
-// 		});
-// } // end addMarkers
+  }
+  
 
 
 
@@ -205,6 +126,80 @@ function setMarkers(map) {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var stores = [
+//     ['Nasty Gal', 34.017339, -118.366452],
+//     ['Fred Segal', 34.083729, -118.366409],
+//     ['Intermix', 34.075957, -118.383448],
+//     ['Kitson', 34.078322, -118.384752],
+//     ['Sherman Oaks Galleria', 34.155500, -118.467376],
+//     ['Barneys', 34.070506, -118.402262]
+// ];
+
+
+// var map;
+// var marker;
+// var info;
+// var content;
+// var icon = '../images/shopping_bag.png';
+// var infowindow;
+// var store;
+
+
+// function initMap() {
+
+//     map = new google.maps.Map(document.getElementById('map'), {
+//         zoom: 11,
+//         center: {lat: 34.071489, lng: -118.400564}
+//     }); // close map
+
+
+//     function setMarkers(map) {
+//     //console.log(marker);  undefined
+//         for (var i = 0; i < stores.length; i++) {
+//             store = stores[i];
+//             marker = new google.maps.Marker({
+//                 position: {lat: store[1], lng: store[2]},
+//                 map: map,
+//                 icon: icon
+//             }); // close marker
+            
+//             content = store[0]
+
+
+//         } // close for loop
+
+//     } //close set markers
+
+//     setMarkers(map, stores);
+
+
+//         google.maps.event.addListener(marker, 'click', function(){
+//             console.log('hello');
+//             infowindow.setContent(store[0]);
+//             console.log(store[0])
+//             infowindow.open(map,marker);
+//         });
+
+//         infowindow = new google.maps.InfoWindow({
+//             content: store[0]
+
+//         });
+
+// }  // close initMap
 
 
 
