@@ -73,15 +73,15 @@ body {
   transform: scale(1.1);
 }
 
-/*LINK BACK TO MAIN PAGE THAT SHOWS ON ALL PAGES*/
+/*LINK BACK TO MAIN AND INDEX PAGES IN FOOTER*/
 
-#totally-valley-link {
+.back-to-link {
     width: 10%;
     margin-bottom: -10em;
     margin-left: 1em;
 }
 
-#totally-valley-link:hover {
+.back-to-link:hover {
     transform: scale(1.1);
 }
 
@@ -106,13 +106,14 @@ button:hover {
 
 #as-if-sound {
   float: left;
-  margin-top: -12em;
+  margin-left: -1.5em;
+  margin-top: -11em;
 }
 
 #wow-sound {
   float: left;
   margin-left: 4em;
-  margin-top: -7.5em;
+  margin-top: -6em;
 }
 
 #popular-sound {
@@ -158,8 +159,9 @@ button:hover {
 
 #songs-logo {
   width: 35%;
-  margin: 5em;
+  margin: 4em;
 }
+
 
 /*/////////////SHOW PAGES DISPLAY///////////////*/
 
@@ -189,13 +191,30 @@ button:hover {
 }
 
 textarea {
-/*  width: 100%;*/
   height: 2em;
   border-radius: 4px;
   box-shadow: 20px 20px 10px #888888;
   padding: 1em;
   font-size: 1em;
 }  
+
+#album-container {
+  width: 100%;
+  text-align: center;
+}
+
+#song-container {
+  width: 20%;
+  text-align: center;
+  background-color: #ffffff;
+  border: 1px solid black;
+  border-radius: 4px;
+  opacity: 0.6;
+  float:right;
+  padding: 1em 2em;
+  margin-top: 4em;
+  margin-right: 2em;
+}
 
 /* Dropdown Button */
 .dropbtn {

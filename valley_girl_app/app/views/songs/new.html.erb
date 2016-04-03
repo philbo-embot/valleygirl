@@ -1,1 +1,23 @@
-<%= render :partial => 'form' %>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>New Song</title>
+</head>
+<body>
+	<header id="page-title">
+		<h1 >Add a Song</h1>
+	</header>
+
+	<section class="form-container">
+		<div class="form">
+			<%= render :partial => 'form' %>
+		</div>
+	</section>
+
+	<footer>	
+		<a href= "/" ><img class="back-to-link" src="/images/totally_valley_logo.png"/></a>
+		<a href= "/songs" ><img class="back-to-link" src="/images/songs.png"/></a>
+	</footer>
+
+</body>
+</html>

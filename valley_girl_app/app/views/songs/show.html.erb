@@ -1,18 +1,41 @@
-<h1><%= @song.title %></h1><br/>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Show Song</title>
+</head>
+<body>
+	<header id="page-title">
+		<h1><%= @song.title %></h1>
+		<h3><%= @song.artist %></h3><br/>
+		<h4><%= @song.user_comments %></h4>
+	</header>
+	<br/>
 
-<h3><%= @song.artist %></h3><br/>
+	<div id="album-container">	
+		<img id="song-image" src="<%= @song.img_url %>"><br/>
+		<audio controls src="../sounds/<%= @song.mp3 %>" ></audio>
+		<img src="../images/next.png"><%= link_to "Next", "/songs/#{@next_song}" %>
+	</div>
 
-<img id="song-image" src="<%= @song.img_url %>"><br/>
+	<div id="song-container">	
+		
+		<h4><%= link_to "Edit Song", edit_song_path %></h4>
+		<div class="dropdown">
+			<button class="dropbtn">Add Comments</button>
+				<div class="dropdown-content">
+					<%= render :partial => 'comments' %>
+				</div>
+		</div>
 
-<audio controls src="../sounds/<%= @song.mp3 %>" ></audio>
-<br/>
+	</div>
+	
+	<br/>
+	<footer>	
+		<a href= "/" ><img class="back-to-link" src="/images/totally_valley_logo.png"/></a>
+		<a href= "/songs" ><img class="back-to-link" src="/images/songs.png"/></a>
+	</footer>
 
-<div id="song-comments">
-	<h3>ADD COMMENTS</h3>
-	<%= render :partial => 'comments' %>
-</div>
-
-<%= link_to "NEXT SONG", "/songs/#{@next_song}" %><br/>
-<%= link_to "EDIT", edit_song_path %><br/>
-<%= link_to "MAIN", root_path %><br/>
-<%= link_to "ALL SONGS", songs_path %>
+</body>
+</html>

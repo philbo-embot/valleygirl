@@ -3,37 +3,37 @@
 <head>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>EDIT</title>
+	<title>Show Movie</title>
 </head>
 <body>
 	<header id="page-title">
 		<h1 ><%= @movie.title %></h1>
 		<h4><%= @movie.user_comments %></h4>
 	</header>
-<br/>
-
-<img id="movie-image" src="<%= @movie.img_url %>">
-
-<div id="info-container">
-	<h3>year: <%= @movie.year %></h3>
-	<h3>writer: <%= @movie.writer %></h3>
-	<h3>actors: <%= @movie.actors %></h3>
-	<h3>plot: <%= @movie.plot %></h3>
-	<h3>imdb rating: <%= @movie.rating %></h3>
 	<br/>
-	<h4><%= link_to 'Edit Movie', edit_movie_path(@movie.id) %></h4>
-	<div class="dropdown">
-		<button class="dropbtn">Add Comments</button>
-		<div class="dropdown-content">
-			<%= render :partial => 'comments' %>
+
+	<img id="movie-image" src="<%= @movie.img_url %>">
+
+	<div id="info-container">
+		<h3>year: <%= @movie.year %></h3>
+		<h3>writer: <%= @movie.writer %></h3>
+		<h3>actors: <%= @movie.actors %></h3>
+		<h3>plot: <%= @movie.plot %></h3>
+		<h3>imdb rating: <%= @movie.rating %></h3>
+		<br/>
+		<h4><%= link_to 'Edit Movie', edit_movie_path(@movie.id) %></h4>
+		<div class="dropdown">
+			<button class="dropbtn">Add Comments</button>
+			<div class="dropdown-content">
+				<%= render :partial => 'comments' %>
+			</div>
 		</div>
+
 	</div>
 
-</div>
-
 <footer>	
-	<a href= "/" ><img id="totally-valley-link" src="/images/totally_valley_logo.png"/></a>
-	<a href= "/movies" ><img id="totally-valley-link" src="/images/movies.png"/></a>
+	<a href= "/" ><img class="back-to-link" src="/images/totally_valley_logo.png"/></a>
+	<a href= "/movies" ><img class="back-to-link" src="/images/movies.png"/></a>
 </footer>
 
 </body>
