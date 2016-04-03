@@ -1,15 +1,16 @@
 * {
-	margin: 0;
-	padding: 0;
+  padding:0;
+  margin:0;
   text-decoration: none;
   font-family: 'Dosis', sans-serif;
   color: black;
 }
 
-html {
-  margin: 0;
-  padding: 0;
-}
+/*html, body {
+  margin: 1em;
+  padding: 1em 2em;
+}*/
+
 /*////////////LANDING PAGE/////////////////*/
 .links-container {
   float: right;
@@ -29,13 +30,15 @@ html {
 }
 
 #totally_valley_logo {
-  width: 35%;
+  width: 30%;
+  margin: 1em;
 }
 
 h1 {
   color: black;
   font-weight: bold;
   font-size: 3.5em;
+  margin-top: 1em;
 }
 
 h2 {
@@ -87,6 +90,8 @@ body {
 
 footer {
   margin-top: -2em;
+  padding: 1em;
+  margin-left: 6em;
 }
 
 /*////////////SOUND BUTTONS ON LANDING PAGE///////////////*/
@@ -153,7 +158,7 @@ button:hover {
   opacity: 0.6;
   float: right;
   padding: 2em;
-  margin-top: -32em;
+  margin-top: -30em;
   margin-right: 3em;
 }
 
@@ -162,6 +167,21 @@ button:hover {
   margin: 4em;
 }
 
+#storelinks-container {
+  background-color: #ffffff;
+  border: 1px solid black;
+  border-radius: 4px;
+  opacity: 0.6;
+  float: right;
+  padding: 2em;
+  margin-top: -4em;
+  margin-right: 6em;
+}
+
+#stores-logo {
+  width: 20%;
+  margin-left: 6em;
+}
 
 /*/////////////SHOW PAGES DISPLAY///////////////*/
 
@@ -172,6 +192,7 @@ button:hover {
 
 #movie-image {
   box-shadow: 20px 20px 10px #888888;
+  margin-left: 7em;
 }
 
 #info-container {
@@ -214,6 +235,22 @@ textarea {
   padding: 1em 2em;
   margin-top: 4em;
   margin-right: 2em;
+}
+
+#storeinfo-container {
+  width: 30%;
+  text-align: center;
+  background-color: #ffffff;
+  border: 1px solid black;
+  border-radius: 4px;
+  opacity: 0.6;
+  padding: 1em 2em;
+  margin: 1em;
+  margin-left: 28em;
+}
+
+#store-footer {
+  text-align:center;
 }
 
 /* Dropdown Button */
@@ -267,7 +304,7 @@ textarea {
   opacity: 0.6;
   padding: 2em;
   margin-top:1em;
-  margin-left:12em;
+  margin-left:16em;
   font-weight: bold;
   font-size: 1.5em;
 }
@@ -278,33 +315,3 @@ input {
 }
 
 
-/*//////////CSS FOR THE QUIZ///////////////*/
-
-
-.quiz {
-  border: 1px solid black;
-  margin: 0 15em;
-  padding: 1em;
-  text-align: left;
-}
-
-input[type="radio"]{
-  margin: .5em 1.5em ;
-}
-
-#submit {
-  margin: .2em 15em;
-  padding: .5em;
-  text-align: center;
-  border: 1px solid black;
-  height: 2em;
-  width: 15em;
-}
-
-#outcome {
-  height: 4em;
-  width: 10em;
-  padding: 2em;
-  overflow: auto;
-  word-break: break-word;
-}

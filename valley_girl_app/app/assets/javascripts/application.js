@@ -47,14 +47,6 @@ function calcscore(){
    $("#outcome").val(display);
 	}; //close calcOutcome
 
-
-
-
-
-
-
-
-
 /////////////////////////////////////////////////////
 // JAVASCRIPT FOR MAP
 /////////////////////////////////////////////////////
@@ -117,11 +109,9 @@ google.maps.event.addListener(marker,'click', (function(marker,content,infowindo
 
 };
 
-  }
-  
+}
 
-
-
+// location.reload();  //this is to get the maps to autoload, but this makes maps markers disappear.
 
 
 

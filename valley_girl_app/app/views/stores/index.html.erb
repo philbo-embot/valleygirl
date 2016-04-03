@@ -1,27 +1,46 @@
 <!DOCTYPE html>
 <html>
   <head>
+      <style>
+          html, body {
+           /* height: 600px;*/
+            /*margin: 1em;
+            padding: 1em 2em;*/
+          }
+          #map {
+            height: 400px;
+            width: 500px;
+            margin-top: -2em;
+            margin-left: 6em;
+            border: 1px solid black;
+            border-radius: 4px;
+            box-shadow: 20px 20px 10px #888888;
+          }
 
-  </head>
-  <body>
-    <header>
-      <img src="images/stores.png">
-    </header>
-    <% @stores.each do |store| %><br/>
-    <div class="store-links">
-      <h2><%= link_to "#{store.name}", store_path(store.id) %><h2><br/>
-    </div>
-    <% end %>
+      </style>
+    </head>
+<body>
 
-    <br/>
+  <header>
+    <a href= "/" ><img id="stores-logo" src="images/stores.png"></a>
+  </header>
 
-    <div id="map"></div>
- 
- 
-    <%= link_to "CREATE", new_store_path %><br/>
-    <%= link_to "MAIN", root_path %>
+  <br/>
 
- </body>
+  <div id="storelinks-container"> 
+    <% @stores.each do |store| %>
+    <h2 class="links"><%= link_to "#{store.name}", store_path(store.id) %></h2>
+    <% end %><br/>
+    <h3><%= link_to '+ Add a Store', new_store_path %></h3>
+  </div>
+
+  <div id="map"></div>
+
+  <footer>  
+    <a href= "/" ><img class="back-to-link" src="images/totally_valley_logo.png"/></a>
+  </footer>
+
+</body>
 </html>
 
 

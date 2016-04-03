@@ -1,5 +1,5 @@
 class MoviesController < ApplicationController
-	before_action :return_movie, only: [:id, :show, :edit, :update]
+	before_action :return_movie, only: [:show, :edit, :update]
 
 	def index
 		@movies = Movie.all
