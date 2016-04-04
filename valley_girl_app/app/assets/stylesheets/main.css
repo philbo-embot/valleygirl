@@ -6,11 +6,6 @@
   color: black;
 }
 
-/*html, body {
-  margin: 1em;
-  padding: 1em 2em;
-}*/
-
 /*////////////LANDING PAGE/////////////////*/
 .links-container {
   float: right;
@@ -56,7 +51,7 @@ h4 {
 }
 
 body {
-	background-image: url("valley_girl_background.png");
+  background-image: url("valley_girl_background.png");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
