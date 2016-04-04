@@ -100,6 +100,7 @@ function setMarkers(map,store){
         });
     map.setCenter(marker.getPosition())
 
+
     content = store;   
 
     infowindow = new google.maps.InfoWindow()
