@@ -15,8 +15,7 @@
 		<img src="../images/next.png"><%= link_to "Next", "/songs/#{@next_song}" %>
 	</div>
 
-	<div id="song-container">	
-		
+	<div id="song-container">			
 		<h4><%= link_to "Edit Song", edit_song_path %></h4>
 		<div class="dropdown">
 			<button class="dropbtn">Add Comments</button>
@@ -24,7 +23,6 @@
 					<%= render :partial => 'comments' %>
 				</div>
 		</div>
-
 	</div>
 	
 	<br/>

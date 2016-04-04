@@ -1,9 +1,36 @@
-# Valley Girl App
 
-##About
+# Totally Valley
+
+https://totally-valley.herokuapp.com
+
+### Description
+Totally Valley is the valley girl full CRUD entertainment app that you always wanted. It includes four main sections: 
+- Movies - view a list of movies and film info provided by OMBD
+- Music - listen to a playlist of songs, view the album cover
+- Stores - find stores, and see maps location
+- Quiz - find out how "valley" you are
+
+Totally Valley is creater curated at the onset, but will be user curated as our user base increases. Users can add movies, music, and stores and add comments for all users to see.
+
+### Tech used / Stack
+- Ruby on Rails
+- Postgres
+- HTML/CSS
+- JavaScript
+- Google Maps API
+- OMDB API
+- Adobe Illustrator
+
+### Features
+- Sound effects
+- Custom graphics
+- Music
+
+### Future Implementations
+- Google maps markers are currently hardcoded. Future plans to program the markers to autopopulate from user input latitude and longitude.
+- Add links to store websites so users can visit stores' online stores.
+- Valley Girl translator - the translator will take an line of user input (phrase or sentence), and output a valley girl sentence. It will use iterators to look for keys words to replace with "valley" words (i.e. replace "so" with "totally"), and randomly add words like "like" and "omigod." 
+- Responsive design - our app is currently meant to be viewed on a desktop. 
 
 
-##Technologies Used
--Ruby on Rails
--Postsql
-
+Totally Valley was a General Assembly project created by Pauline "Philbo" Hilborn and Emily "Embot" McCormick. We had a lot of laughs creating it, and we hope you have fun using it.
