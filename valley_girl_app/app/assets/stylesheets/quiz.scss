@@ -2,28 +2,54 @@
 
 .quiz {
   border: 1px solid black;
-  margin: 0 15em;
+  border-radius: 6px;
+  margin: 1% 15em;
   padding: 1em;
   text-align: left;
 }
 
-input[type="radio"]{
-  margin: .5em 1.5em ;
+input.calc{
+  width: 3em;
+}
+
+div#score {
+  margin: .2em 33%;
+  border: 1px solid black;
+  border-radius: 6px;
 }
 
 #submit {
-  margin: .2em 15em;
+  margin: .2em 20%;
   padding: .5em;
   text-align: center;
   border: 1px solid black;
+  border-radius: 6px;
   height: 2em;
-  width: 15em;
+  width: 14em;
 }
 
 #outcome {
   height: 4em;
-  width: 10em;
-  padding: 2em;
+  width: 14em;
+  margin: .2em 15% 1em 15%;
+  padding: 2.5em;
   overflow: auto;
   word-break: break-word;
+}
+
+#totalscore {
+  height: 2em;
+  width: 40em;
+  margin: .2em 15%;
+
+}
+
+.back-to-link {
+  width: 10%;
+  margin-bottom: -10em;
+  margin-left: 1em;
+}
+
+.back-to-link:hover {
+  transform: scale(1.1);
 }
