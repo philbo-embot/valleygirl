@@ -309,4 +309,84 @@ input {
   height: 2.5em;
 }
 
+/***************MEDIA QUERY FOR BIG TABLET (KINDA? GETS WEIRD at 940px)***************/
+
+@media screen and (max-width: 940px){
+
+   #totally_valley_logo {
+    margin: 2em;
+  }
+
+  #as-if-sound {
+    margin-left: 3.5em;
+    margin-top: -5em;
+  }
+
+  #wow-sound {
+    margin-top: -7em;
+  }
+
+  #popular-sound {
+    margin-right: 3em;
+  }
+
+  #fer-sure-sound {
+    margin-right: 4em;
+    margin-top: -5em;
+  }
+
+  .links-container {
+    padding: 2em;
+    margin: 1px auto;
+  }
+
+  section div a img {
+    display: block;
+    overflow: auto;
+    width: 100%;
+    padding: 1em;
+    margin: 1em;
+  }
+
+   #movielinks-container {
+    width: 40%;
+    padding: 3.5em;
+    margin-top: -20em;
+  }
+
+  #songlinks-container {
+    width: 40%;
+    padding: 3.5em;
+    margin-top: -20em;
+  }
+
+  #storelinks-container {
+    width: 20%;
+    padding: 2em;
+    margin-top: -8em;
+    margin-right: 1em;
+  }
+
+  #info-container {
+    width: 40%;
+  }
+
+  .form {
+    margin-left: 10em;
+  }
+
+  #storeinfo-container {
+    margin-left: 16em;
+    width: 40%;
+  }
+  
+  footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+  }
+
+}
 
