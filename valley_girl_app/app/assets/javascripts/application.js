@@ -20,6 +20,8 @@
 // JAVASCRIPT FOR QUIZ
 /////////////////////////////////////////////////////
 
+// window.onload = function(){
+
 var score = 0;
 var display = null;
 
@@ -51,9 +53,19 @@ function calcscore(){
 // JAVASCRIPT FOR MAP
 /////////////////////////////////////////////////////
 
+//window.onload = function(){
+
+
+
+var marker = null;
+var store = null;
+var lat = null;
+var lng = null;
+var infowindow = null;
+var content = null;
 var icon = '../images/shopping_bag.png';
 var stores = [
-    ['Nasty Gal', 34.017339, -118.366452],
+    ['Nasty Gal', 34.017339, -118.366452, '1254 3rd St Promenade Santa Monica, CA 90401'],
     ['Fred Segal', 34.083729, -118.366409],
     ['Intermix', 34.075957, -118.383448],
     ['Kitson', 34.078322, -118.384752],
@@ -62,8 +74,6 @@ var stores = [
 ];
 
 function initMap() {
-
-
     map = new google.maps.Map(document.getElementById('map'), {
         zoom: 11,
         center: {lat: 34.071489, lng: -118.400564}
@@ -74,40 +84,34 @@ function initMap() {
   }
 
 
+function setMarkers(map,store){
+  for (i = 0; i < stores.length; i++)
+  {  
 
-  function setMarkers(map,store){
+    store = stores[i][0]
+    lat = stores[i][1]
+    lng = stores[i][2]
+    address = stores[i][3]
 
-      var marker, i
+    latlngset = new google.maps.LatLng(lat, lng);
 
-
-for (i = 0; i < stores.length; i++)
- {  
-
- var store = stores[i][0]
- var lat = stores[i][1]
- var lng = stores[i][2]
-
-
- latlngset = new google.maps.LatLng(lat, lng);
-
-  var marker = new google.maps.Marker({  
-          map: map, title: store , position: latlngset, icon: icon
+    marker = new google.maps.Marker({  
+      map: map, title: store , position: latlngset, icon: icon
         });
-        map.setCenter(marker.getPosition())
+    map.setCenter(marker.getPosition())
 
+    content = store;   
 
-        var content = store;   
+    infowindow = new google.maps.InfoWindow()
 
-  var infowindow = new google.maps.InfoWindow()
+    google.maps.event.addListener(marker,'click', (function(marker,content,infowindow){ 
+        return function() {
+            infowindow.setContent(content);
+            infowindow.open(map,marker);
+        };
+    })(marker,content,infowindow));  
 
-google.maps.event.addListener(marker,'click', (function(marker,content,infowindow){ 
-    return function() {
-        infowindow.setContent(content);
-        infowindow.open(map,marker);
-    };
-})(marker,content,infowindow));  
-
-};
+    }; //close for loop
 
 }
 
@@ -190,6 +194,6 @@ google.maps.event.addListener(marker,'click', (function(marker,content,infowindo
 //         });
 
 // }  // close initMap
-
+//}
 
 
