@@ -1,3 +1,27 @@
-<%= render :partial => 'form' %><br/>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Edit Store</title>
+</head>
+<body>
+	<header id="page-title">
+		<h1 >Edit Store</h1>
+	</header>
 
-<%= link_to 'DELETE', store_path(@store.id), :method => 'delete' %><br/>
+	<section class="form-container">
+		<div class="form">
+			<%= render :partial => 'form' %>
+			<%= link_to 'x Delete Store', store_path(@store.id), :method => 'delete' %>
+		</div>
+		
+	</section>
+	<br/>
+
+	
+	<footer>	
+		<a href= "/" ><img class="back-to-link" src="/images/totally_valley_logo.png"/></a>
+		<a href= "/movies" ><img class="back-to-link" src="/images/movies.png"/></a>
+	</footer>
+
+</body>
+</html>

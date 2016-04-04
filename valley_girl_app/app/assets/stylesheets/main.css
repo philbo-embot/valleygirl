@@ -1,15 +1,16 @@
 * {
-	margin: 0;
-	padding: 0;
+  padding:0;
+  margin:0;
   text-decoration: none;
   font-family: 'Dosis', sans-serif;
   color: black;
 }
 
-html {
-  margin: 0;
-  padding: 0;
-}
+/*html, body {
+  margin: 1em;
+  padding: 1em 2em;
+}*/
+
 /*////////////LANDING PAGE/////////////////*/
 .links-container {
   float: right;
@@ -29,13 +30,15 @@ html {
 }
 
 #totally_valley_logo {
-  width: 35%;
+  width: 30%;
+  margin: 1em;
 }
 
 h1 {
   color: black;
   font-weight: bold;
   font-size: 3.5em;
+  margin-top: 1em;
 }
 
 h2 {
@@ -73,20 +76,22 @@ body {
   transform: scale(1.1);
 }
 
-/*LINK BACK TO MAIN PAGE THAT SHOWS ON ALL PAGES*/
+/*LINK BACK TO MAIN AND INDEX PAGES IN FOOTER*/
 
-#totally-valley-link {
+.back-to-link {
     width: 10%;
     margin-bottom: -10em;
     margin-left: 1em;
 }
 
-#totally-valley-link:hover {
+.back-to-link:hover {
     transform: scale(1.1);
 }
 
 footer {
   margin-top: -2em;
+  padding: 1em;
+  margin-left: 6em;
 }
 
 /*////////////SOUND BUTTONS ON LANDING PAGE///////////////*/
@@ -106,13 +111,14 @@ button:hover {
 
 #as-if-sound {
   float: left;
-  margin-top: -12em;
+  margin-left: -1.5em;
+  margin-top: -11em;
 }
 
 #wow-sound {
   float: left;
   margin-left: 4em;
-  margin-top: -7.5em;
+  margin-top: -6em;
 }
 
 #popular-sound {
@@ -152,13 +158,29 @@ button:hover {
   opacity: 0.6;
   float: right;
   padding: 2em;
-  margin-top: -32em;
+  margin-top: -30em;
   margin-right: 3em;
 }
 
 #songs-logo {
   width: 35%;
-  margin: 5em;
+  margin: 4em;
+}
+
+#storelinks-container {
+  background-color: #ffffff;
+  border: 1px solid black;
+  border-radius: 4px;
+  opacity: 0.6;
+  float: right;
+  padding: 2em;
+  margin-top: -4em;
+  margin-right: 6em;
+}
+
+#stores-logo {
+  width: 20%;
+  margin-left: 6em;
 }
 
 /*/////////////SHOW PAGES DISPLAY///////////////*/
@@ -170,6 +192,7 @@ button:hover {
 
 #movie-image {
   box-shadow: 20px 20px 10px #888888;
+  margin-left: 7em;
 }
 
 #info-container {
@@ -189,13 +212,46 @@ button:hover {
 }
 
 textarea {
-/*  width: 100%;*/
   height: 2em;
   border-radius: 4px;
   box-shadow: 20px 20px 10px #888888;
   padding: 1em;
   font-size: 1em;
 }  
+
+#album-container {
+  width: 100%;
+  text-align: center;
+}
+
+#song-container {
+  width: 20%;
+  text-align: center;
+  background-color: #ffffff;
+  border: 1px solid black;
+  border-radius: 4px;
+  opacity: 0.6;
+  float:right;
+  padding: 1em 2em;
+  margin-top: 4em;
+  margin-right: 2em;
+}
+
+#storeinfo-container {
+  width: 30%;
+  text-align: center;
+  background-color: #ffffff;
+  border: 1px solid black;
+  border-radius: 4px;
+  opacity: 0.6;
+  padding: 1em 2em;
+  margin: 1em;
+  margin-left: 28em;
+}
+
+#store-footer {
+  text-align:center;
+}
 
 /* Dropdown Button */
 .dropbtn {
@@ -248,7 +304,7 @@ textarea {
   opacity: 0.6;
   padding: 2em;
   margin-top:1em;
-  margin-left:12em;
+  margin-left:16em;
   font-weight: bold;
   font-size: 1.5em;
 }
@@ -259,33 +315,3 @@ input {
 }
 
 
-/*//////////CSS FOR THE QUIZ///////////////*/
-
-
-.quiz {
-  border: 1px solid black;
-  margin: 0 15em;
-  padding: 1em;
-  text-align: left;
-}
-
-input[type="radio"]{
-  margin: .5em 1.5em ;
-}
-
-#submit {
-  margin: .2em 15em;
-  padding: .5em;
-  text-align: center;
-  border: 1px solid black;
-  height: 2em;
-  width: 15em;
-}
-
-#outcome {
-  height: 4em;
-  width: 10em;
-  padding: 2em;
-  overflow: auto;
-  word-break: break-word;
-}

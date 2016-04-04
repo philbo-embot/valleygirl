@@ -1,2 +1,24 @@
-<%= render :partial => 'form' %><br/>
-<%= link_to 'DELETE', song_path(@song.id), :method => 'delete' %><br/>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Edit Song</title>
+</head>
+<body>
+	<header id="page-title">
+		<h1 >Edit Song</h1>
+	</header>
+
+	<section class="form-container">
+		<div class="form">
+			<%= render :partial => 'form' %><br/>
+			<%= link_to 'x Delete Song', song_path(@song.id), :method => 'delete' %>
+		</div>
+	</section>
+	<br/>
+	<footer>	
+		<a href= "/" ><img class="back-to-link" src="/images/totally_valley_logo.png"/></a>
+		<a href= "/songs" ><img class="back-to-link" src="/images/songs.png"/></a>
+	</footer>
+
+</body>
+</html>

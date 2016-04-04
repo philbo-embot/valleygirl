@@ -49,14 +49,6 @@ function calcscore(){
    $("#outcome").val(display);
 	}; //close calcOutcome
 
-
-
-
-
-
-
-
-
 /////////////////////////////////////////////////////
 // JAVASCRIPT FOR MAP
 /////////////////////////////////////////////////////
@@ -125,7 +117,7 @@ function setMarkers(map,store){
   
 
 
-
+// location.reload();  //this is to get the maps to autoload, but this makes maps markers disappear.
 
 
 
