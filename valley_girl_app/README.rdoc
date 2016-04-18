@@ -10,7 +10,7 @@ Totally Valley is the valley girl full CRUD entertainment app that you always wa
 - Stores - find stores, and see maps location
 - Quiz - find out how "valley" you are
 
-Totally Valley is creater curated at the onset, but will be user curated as our user base increases. Users can add movies, music, and stores and add comments for all users to see.
+Totally Valley is creator curated at the onset, but will be user curated as our user base increases. Users can add movies, music, and stores and add comments for all users to see.
 
 ### Tech used / Stack
 - Ruby on Rails
